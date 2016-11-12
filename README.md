@@ -8,6 +8,10 @@ It simply attaches `onchange` listeners to every `input` and `textarea` element 
 
 Currently relies on an `id` attribute for all `input` and `textarea` elements.
 
+
+## How to clear data from storage 
+Run the `window.clearFormSync()` function to empty out everything in storage. Use this when a form submission has been successful.
+
 ## JSFiddle Example:
 https://jsfiddle.net/acoyfellow/2se2rLq2/
 
@@ -49,10 +53,4 @@ https://jsfiddle.net/acoyfellow/2se2rLq2/
   <script src="https://cdn.rawgit.com/acoyfellow/FormSync/master/FormSync.js"></script>
 
 </html>
-```
-
-## How to clear data from storage 
-Run the `window.clearFormSync()` function to empty out everything in storage. Use this when a form submission has been successful.
-```html
-<form onsubmit="clearFormSync(); location.reload(); return false;">...</form>
 ```
