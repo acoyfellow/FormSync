@@ -25,6 +25,7 @@ FormSync.prototype.checkLocal= function(cb){
     storeName   : 'form_data',
     description : 'Sync all form elements locally'
 	});
+  window.clearFormSync= localforage.clear;
   localforage.iterate(function(value, key) {
       var el= document.getElementById(key);
       if(el===null){ return };
@@ -63,21 +64,31 @@ FormSync.prototype.listeners= function(cb){
       };
     };
   };
-  
+};
+
+// clearAll
+FormSync.prototype.clearAll= function(){
+ console.log('clearAll');
+ localForge.clear();
+ return false;
 };
 
 // create FormSync instance
 var formSync= new FormSync();
 
 // initiate waterfall
-formSync.init(function(){
-  formSync.checkLocal(function(){
-    formSync.listeners(function(){
+var waterfall= function(){
+  formSync.init(function(){
+    formSync.checkLocal(function(){
+      formSync.listeners(function(){
 
+      });
     });
   });
-});
+};
 
-
-
-
+if(document.readyState === "complete"){ 
+  waterfall () 
+}else{
+  window.onload= waterfall();
+};
