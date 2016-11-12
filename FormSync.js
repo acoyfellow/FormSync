@@ -19,12 +19,12 @@ FormSync.prototype.init= function(cb){
 
 // Loads LocalForage config, iterates over the data found, sets by element #id
 FormSync.prototype.checkLocal= function(cb){
-	localforage.config({
-    name        : 'FormSync',
-    version     : 1.0,
-    storeName   : 'form_data',
-    description : 'Sync all form elements locally'
-	});
+   localforage.config({
+	    name        : 'FormSync',
+	    version     : 1.0,
+	    storeName   : 'form_data',
+	    description : 'Sync all form elements locally'
+  });
   window.clearFormSync= localforage.clear;
   localforage.iterate(function(value, key) {
       var el= document.getElementById(key);
