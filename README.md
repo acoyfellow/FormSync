@@ -24,7 +24,7 @@ https://jsfiddle.net/acoyfellow/2se2rLq2/
       function mySubmitFunction(){
         // add form validation here
         // add ajax/websockets here
-        clearFormSync(); //success! clear form data now:
+        clearFormSync(); //assuming successful above, so clear data
         location.reload(); // reload page
         return false;
       };
