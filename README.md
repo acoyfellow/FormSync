@@ -21,43 +21,47 @@ Currently relies on an `id` attribute for all `input` and `textarea` elements.
 
   <body>
     <script>
-      function mySubmitFunction(){
-        // add form validation here
-        // add ajax/websockets here
-        clearFormSync(); //assuming successful above, so clear data
-        location.reload(); // reload page
-        return false;
-      };
+    function mySubmitFunction() {
+      // add form validation here
+      // add ajax/websockets here
+      clearFormSync(); //success! clear form data now:
+      alert('Success! We will now empty out storage since the form was successful.')
+      location.reload(); // reload page
+      return false;
+    };
     </script>
+
     <form onsubmit="return mySubmitFunction()">
-      <p>
-      Try filling out some of the fields below... and before you hit Submit, hit refresh or "Run" again.
-      </p>
-      <textarea id="textarea" value="" placeholder="i'm empty"></textarea><br/>
-      <input id="test" type="text" value="" placeholder="i'm empty"/><br/>
-      <input id="test2" type="text" value="" placeholder="i'm empty"/><br/>
-      <input id="test3" type="text" value="" placeholder="i'm empty"/><br/>
-      <input id="test4" type="text" value="" placeholder="i'm empty"/><br/>
-      <input id="test5" type="text" value="" placeholder="i'm empty"/><br/>
-      <hr/>
-      <input id="test6" type="checkbox" name="vehicle" value="Bike"> I have a bike<br/>
-      <input id="test7" type="checkbox" name="vehicle" value="Car"> I have a car<br/>
-      <hr/>
-      <input id="test8" type="radio" name="gender" value="male"> Male<br/>
-      <input id="test9" type="radio" name="gender" value="female"> Female<br/>
-      <input id="test10" type="radio" name="gender" value="other"> Other<br/>
-      <hr/>
-      <select id="select">
-        <option>First option</option>
-        <option>Second option</option>
-        <option>Third option</option>
-      </select>
-      <br/>
-      <br/>
-      <button type="submit">
-      Submit (will clear storage)
-      </button>
-    </form>
+    <p>
+    Try filling out some of the fields below... and before you hit Submit, hit refresh or "Run" again.
+    </p>
+    <textarea id="textarea" value=""></textarea><br/>
+    <input id="test" type="text" value="" placeholder=""/><br/>
+    <input id="test2" type="text" value="" placeholder=""/><br/>
+    <input id="test3" type="text" value="" placeholder=""/><br/>
+    <input id="test4" type="text" value="" placeholder=""/><br/>
+    <input id="test5" type="text" value="" placeholder=""/><br/>
+    <hr/>
+    <input id="test6" type="checkbox" name="vehicle" value="Bike"> I have a bike<br/>
+    <input id="test7" type="checkbox" name="vehicle" value="Car"> I have a car<br/>
+    <hr/>
+    <input id="test8" type="radio" name="gender" value="male"> Male<br>
+    <input id="test9" type="radio" name="gender" value="female"> Female<br>
+    <input id="test10" type="radio" name="gender" value="other"> Other<br>
+    <hr/>
+    <select id="select">
+      <option>First option</option>
+      <option>Second option</option>
+      <option>Third option</option>
+    </select>
+
+    <br>
+    <br>
+
+    <button type="submit">
+    Submit (will clear storage)
+    </button>
+  </form>
   </body>
 
   <script src="https://rawgit.com/acoyfellow/FormSync/master/FormSync.js"></script>
