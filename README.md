@@ -47,6 +47,10 @@ https://jsfiddle.net/acoyfellow/2se2rLq2/
       <input id="test8" type="radio" name="gender" value="male"> Male<br>
       <input id="test9" type="radio" name="gender" value="female"> Female<br>
       <input id="test10" type="radio" name="gender" value="other"> Other
+      <br>
+      <button type="submit">
+        Submit
+      </button>
     </form>
   </body>
 
