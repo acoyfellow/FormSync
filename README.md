@@ -13,7 +13,7 @@ Currently relies on an `id` attribute for all `input` and `textarea` elements.
 2. For every `input` and `textarea` you want to sync locally, be sure to add an id attribute. For now, FormSync relies on this.
 3. When you want to clear the form data, run the `window.clearFormSync()` function to empty out everything in storage. Use this when a form submission has been successful.
 
-## JSFiddle Example:
+## Live Demo:
 https://jsfiddle.net/acoyfellow/2se2rLq2/
 
 ## Full example:
