@@ -5,14 +5,14 @@ Sync form value locally in the client
 https://jsfiddle.net/acoyfellow/2se2rLq2/
 
 ## Full example:
-```<!DOCTYPE html>
-<html>
-<head>
-<title>Title of the document</title>
-</head>
+  <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Title of the document</title>
+    </head>
 
-<body>
-The content of the document......
-</body>
+    <body>
+    The content of the document......
+    </body>
 
-</html>```
+  </html>
