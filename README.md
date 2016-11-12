@@ -20,7 +20,16 @@ https://jsfiddle.net/acoyfellow/2se2rLq2/
   </head>
 
   <body>
-    <form onsubmit="clearFormSync(); location.reload(); return false;">
+    <script>
+      function mySubmitFunction(){
+        // add form validation here
+        // add ajax/websockets here
+        clearFormSync(); //success! clear form data now:
+        location.reload(); // reload page
+        return false;
+      };
+    </script>
+    <form onsubmit="return mySubmitFunction()">
       <textarea id="textarea" value="" placeholder="i'm empty"></textarea><br/>
       <input id="test" type="text" value="" placeholder="i'm empty"/><br/>
       <input id="test2" type="text" value="" placeholder="i'm empty"/><br/>
