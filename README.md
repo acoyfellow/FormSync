@@ -54,3 +54,6 @@ https://jsfiddle.net/acoyfellow/2se2rLq2/
 
 </html>
 ```
+
+### License
+[Apache](https://github.com/acoyfellow/FormSync/blob/master/LICENSE "Apache")
