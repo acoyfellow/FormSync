@@ -47,7 +47,7 @@ FormSync.prototype.listeners= function(cb){
     for (var index = 0; index < elements.length; ++index) {
       if(elements[index].id==''){ return };
       
-      elements[index].onchange= function(e){
+      elements[index].onkeyup= function(e){
          var input= e.target;
 				 var val= null;
          console.log(input.type=='radio', input.type=='checkbox', input)
