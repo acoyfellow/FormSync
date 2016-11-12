@@ -1,6 +1,6 @@
 # FormSync
 
-Keep your website visitors data preserved locally. Improve conversions for people who dropped off mid-way through filling out an online form.
+Store your website visitors form data locally. Improve conversions for people who dropped off mid-way through filling out an online form.
 
 FormSync is a lightweight js library with 0 configuration. 
 
