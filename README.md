@@ -42,5 +42,8 @@ https://jsfiddle.net/acoyfellow/2se2rLq2/
 </html>
 ```
 
-** How to clear data from storage 
+## How to clear data from storage 
 Run the `window.clearFormSync()` function to empty out everything in storage. Use this when a form submission has been successful.
+```html
+<form onsubmit="clearFormSync(); location.reload(); return false;">...</form>
+```
