@@ -1,4 +1,4 @@
-# FormSync
+# FormSync ([demo](https://jsfiddle.net/acoyfellow/2se2rLq2 "demo"))
 
 Store your website visitors form data locally. Improve conversions for people who dropped off mid-way through filling out an online form.
 
@@ -12,9 +12,6 @@ Currently relies on an `id` attribute for all `input` and `textarea` elements.
 1. Add FormSync.js (download it from here or use a CDN like [GitCDN](https://gitcdn.xyz/repo/acoyfellow/FormSync/master/FormSync.js "GitCDN"))
 2. For every `input` and `textarea` you want to sync locally, be sure to add an id attribute. For now, FormSync relies on this.
 3. When you want to clear the form data, run the `window.clearFormSync()` function to empty out everything in storage. Use this when a form submission has been successful.
-
-## Live Demo:
-https://jsfiddle.net/acoyfellow/2se2rLq2/
 
 ## Full example:
 ```html
