@@ -5,6 +5,7 @@ Sync form value locally in the client
 https://jsfiddle.net/acoyfellow/2se2rLq2/
 
 ## Full example:
+```html
     <html>
     
       <head>
@@ -32,3 +33,4 @@ https://jsfiddle.net/acoyfellow/2se2rLq2/
       <script src="https://cdn.rawgit.com/acoyfellow/FormSync/master/FormSync.js"></script>
       
     </html>
+```
