@@ -20,7 +20,7 @@ https://jsfiddle.net/acoyfellow/2se2rLq2/
   </head>
 
   <body>
-    <form onsubmit="return false">
+    <form onsubmit="clearFormSync(); location.reload(); return false;">
       <textarea id="textarea" value="" placeholder="i'm empty"></textarea><br/>
       <input id="test" type="text" value="" placeholder="i'm empty"/><br/>
       <input id="test2" type="text" value="" placeholder="i'm empty"/><br/>
@@ -41,3 +41,6 @@ https://jsfiddle.net/acoyfellow/2se2rLq2/
 
 </html>
 ```
+
+** How to clear data from storage 
+Run the `window.clearFormSync()` function to empty out everything in storage. Use this when a form submission has been successful.
