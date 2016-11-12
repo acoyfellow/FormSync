@@ -1,8 +1,6 @@
 # FormSync ([demo](https://jsfiddle.net/acoyfellow/2se2rLq2 "demo"))
 
-Store your website visitors form data locally. Improve conversions for people who dropped off mid-way through filling out an online form.
-
-FormSync is a lightweight js library with 0 configuration. 
+Store your website visitors form data locally. Improve conversions for people who dropped off mid-way through filling out an online form. Less than 3kb.
 
 It simply attaches `onkeyup` listeners to every `input` and `textarea` element on the page, and syncs them locally in the client using [LocalForage](https://github.com/localForage/localForage "LocalForage").
 
