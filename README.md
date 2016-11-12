@@ -2,7 +2,7 @@
 
 Store your website visitors form data locally. Improve conversions for people who dropped off mid-way through filling out an online form. Less than 3kb.
 
-It simply attaches `onkeyup` listeners to every `input` and `textarea` element on the page, and syncs them locally in the client using [LocalForage](https://github.com/localForage/localForage "LocalForage").
+It simply attaches `onkeyup` listeners to every `input` and `textarea` element on the page (`onchange` for `select` elements), and syncs them locally in the client using [LocalForage](https://github.com/localForage/localForage "LocalForage").
 
 Currently relies on an `id` attribute for all `input` and `textarea` elements.
 
