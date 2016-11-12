@@ -4,7 +4,7 @@ Store your website visitors form data locally. Improve conversions for people wh
 
 It simply attaches `onkeyup` listeners to every `input` and `textarea` element on the page (`onchange` for `select` elements), and syncs them locally in the client using [LocalForage](https://github.com/localForage/localForage "LocalForage").
 
-Currently relies on an `id` attribute for all `input` and `textarea` elements.
+Currently relies on an `id` attribute for all elements (`input`, `select`, and `textarea`).
 
 ## How to install
 1. Add FormSync.js (download it from [here](https://github.com/acoyfellow/FormSync/blob/master/FormSync.js "here") or use a CDN like [GitCDN](https://gitcdn.xyz/repo/acoyfellow/FormSync/master/FormSync.js "GitCDN") or [RawGit](https://rawgit.com/acoyfellow/FormSync/master/FormSync.js "RawGit"))
