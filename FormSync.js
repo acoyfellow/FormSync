@@ -26,6 +26,7 @@ FormSync.prototype.checkLocal= function(cb){
     description : 'Sync all form elements locally'
 	});
   window.clearFormSync= localforage.clear;
+	console.log(window.clearFormSync)
   localforage.iterate(function(value, key) {
       var el= document.getElementById(key);
       if(el===null){ return };
