@@ -40,7 +40,17 @@ FormSync.prototype.checkLocal= function(cb){
 };
 
 // set onchange listeners for all input and textarea elements
-FormSync.prototype.listeners= function(cb){
+FormSync.prototype.listeners= function(){
+  // select dropdowns
+  var selects= document.getElementsByTagName('select')
+  for (var selectIndex = 0; selectIndex < selects.length; ++selectIndex){
+   selects[selectIndex].onchange= function(e){
+      localforage.setItem(e.target.id, e.target.value).catch(function (err) {
+        console.log(err);
+      });
+   };
+  };
+  // inputs / textareas
 	var types= ['input', 'textarea'];
   for (var typeIndex = 0; typeIndex < types.length; ++typeIndex) {
    	var elements= document.getElementsByTagName(types[typeIndex]);
@@ -56,9 +66,7 @@ FormSync.prototype.listeners= function(cb){
          }else{
           val= e.target.value
          };
-        localforage.setItem(e.target.id, val).then(function(){
-          console.log(e.target.id, val);
-        }).catch(function (err) {
+        localforage.setItem(e.target.id, val).catch(function (err) {
           console.log(err);
         });
       };
