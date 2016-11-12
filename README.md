@@ -1,5 +1,12 @@
 # FormSync
-Sync form value locally in the client
+
+Keep your website visitors data preserved locally.
+
+FormSync is a lightweight js library with 0 configuration. 
+
+It simply attaches `onchange` listeners to every `input` and `textarea` element on the page, and syncs them locally in the client using [LocalForage](https://github.com/localForage/localForage "LocalForage").
+
+Currently relies on an `id` attribute for all `input` and `textarea` elements.
 
 ## JSFiddle Example:
 https://jsfiddle.net/acoyfellow/2se2rLq2/
