@@ -1,4 +1,4 @@
-# FormSync ([demo](https://jsfiddle.net/acoyfellow/hrk4xaco/ "demo"))
+# FormSync ([demo](https://acoyfellow.github.io/FormSync/ "demo"))
 
 Store your website visitors form data locally. Improve conversions for people who dropped off mid-way through filling out an online form. Less than 3kb.
 
