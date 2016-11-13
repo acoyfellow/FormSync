@@ -55,7 +55,7 @@ FormSync.prototype.listeners= function(){
   for (var typeIndex = 0; typeIndex < types.length; ++typeIndex) {
    	var elements= document.getElementsByTagName(types[typeIndex]);
     for (var index = 0; index < elements.length; ++index) {
-      if(elements[index].id==''){ return };
+      if(elements[index].id===''||elements[index].type==='password'){ return };
       
       var sync= function(e){
          var input= e.target;
@@ -90,9 +90,7 @@ var formSync= new FormSync();
 var waterfall= function(){
   formSync.init(function(){
     formSync.checkLocal(function(){
-      formSync.listeners(function(){
-
-      });
+      formSync.listeners();
     });
   });
 };
