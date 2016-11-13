@@ -57,7 +57,7 @@ FormSync.prototype.listeners= function(){
     for (var index = 0; index < elements.length; ++index) {
       if(elements[index].id==''){ return };
       
-      elements[index].onkeyup= function(e){
+      var sync= function(e){
          var input= e.target;
 				 var val= null;
          console.log(input.type=='radio', input.type=='checkbox', input)
@@ -70,6 +70,8 @@ FormSync.prototype.listeners= function(){
           console.log(err);
         });
       };
+      elements[index].onkeyup= sync;
+      elements[index].onchange= sync;
     };
   };
 };
