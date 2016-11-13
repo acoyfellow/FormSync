@@ -69,5 +69,10 @@ Currently relies on an `id` attribute for all elements (`input`, `select`, and `
 </html>
 ```
 
+
+### Quick note on security:
+1. If you don't want to sync an input field (like a credit card field) - do not add an input ID to that field (more ways to opt-in/out fields in the future)
+2. By default, this will *not* work on input type=password fields.
+
 ### License
 [Apache](https://github.com/acoyfellow/FormSync/blob/master/LICENSE "Apache")
